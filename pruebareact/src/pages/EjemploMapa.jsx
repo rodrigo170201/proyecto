@@ -150,7 +150,7 @@ const EjemploMapa = () => {
                                             Ver Carretera
                                         </Button>
                                         {carretera.estado === "bloqueada" && (
-                                            <Button onClick={() => alert(carretera.motivoBloqueo)}>
+                                            <Button onClick={() => alert(carretera.razonBloqueo)}>
                                                 Ver Motivo
                                             </Button>
                                         )}

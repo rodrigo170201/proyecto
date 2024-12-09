@@ -244,7 +244,7 @@ const FormCarretera = () => {
               <GoogleMap
                 mapContainerStyle={{ width: "100%", height: "400px" }}
                 center={{ lat: -17.7830258, lng: -63.1803598 }}
-                zoom={10}
+                zoom={9}
                 onClick={handleMapClick}
               >
                 {Array.isArray(markerArray) &&

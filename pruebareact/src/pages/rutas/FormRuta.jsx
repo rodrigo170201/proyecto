@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Button, Form, Container, Row, Col, Card } from "react-bootstrap";
 import axios from "axios";
+import NavMenu from "../../components/NavMenu";
 
 const FormRuta = () => {
   const { id } = useParams();
@@ -121,6 +122,8 @@ const FormRuta = () => {
   };
 
   return (
+    <>
+    <NavMenu/>
     <Container className="mt-4">
       <Row>
         <Col md={{ span: 8, offset: 2 }}>
@@ -225,6 +228,7 @@ const FormRuta = () => {
         </Col>
       </Row>
     </Container>
+    </>
   );
 };
 
